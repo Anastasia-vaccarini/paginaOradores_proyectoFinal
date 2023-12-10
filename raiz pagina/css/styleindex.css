@@ -1,0 +1,1008 @@
+:root{
+    --negro:black;
+    --blanco:#fff;
+    --color_fuente_grisclaro_header:rgb(117, 111, 111);
+    --color_boton_ada1:rgb(100, 98, 98);
+    --color_boton_ada2:rgb(228, 68, 57);
+    --color_boton_react:rgb(43, 202, 255);
+    --color_boton_js:rgb(255, 196, 0);
+    --color_header:rgb(30, 29, 29);
+    --fuente_general:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --tamaño_fuente_header:40px;
+    --margin_cero: 0px;
+    --color_boton_verde:rgb(59, 170, 59);
+    --tamaño_fuente_botones: medium;
+    --tamaño_fuentes_etiquetas_oradores:smaller;
+    --color_boton_enviarform_verde:rgb(146, 205, 42);
+    --color_fuente_form:rgb(6, 6, 41);
+    --color_footer:rgb(16, 46, 73);
+
+}
+a input:hover{
+    cursor:pointer;
+}
+button:hover{
+    cursor:pointer;
+}
+/* admin  */
+#ingresoAdmin1 {
+    color: var(--blanco);
+    font-size: large;
+    background: none;
+    border: none;
+}
+#ingresoAdmin1:hover{
+    cursor: pointer;
+}
+.admin1 a{
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+/* /admin */
+
+
+
+.labelCategoria2{
+    display: none;
+}
+.centrador-horizontal{
+    display: flex;
+    justify-content: center;
+}
+.centradorpor4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alineador_vertical{
+
+    display: flex;
+    align-items: center;
+}
+html, body{
+    box-sizing: border-box;
+    font-family: var(--fuente_general);
+    margin: var(--margin_cero);
+    padding: var(--margin_cero);
+    overflow-x: hidden;
+    
+}
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    background-color: var(--color_header);
+    margin: var(--margin_cero);
+    color: var(--blanco);
+
+}
+/* .ajusteInput:hover {
+    border: n;
+} */
+.ajusteInput:focus{
+    outline: none;
+}
+/* .navegador{
+    background-color: aqua;
+} */
+
+.navegador div {
+
+    /* background-color: violet; */
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    justify-content:space-evenly;
+    /* justify-content:space-between; */
+}
+
+#botonMenu{
+    display: none;
+}
+.header_element--1{
+    width: 30%;
+}
+.header_element--2{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+}
+#contenidoMenu{
+    display: block;
+    background-color: var(--color_header);
+}
+.header_element--2--opcion-1 {
+    color: var(--blanco);
+}
+.header_element--2--opcion-2{
+    color: var(--color_boton_verde);
+}
+
+.header_element--2--opcion{
+    text-decoration: none;
+    font-size: larger;
+    padding: 10px;
+}
+
+.header_element--2--opcion-3{
+    color: var(--color_fuente_grisclaro_header);
+}
+.header_element--1--img{
+    width: 100px;
+    height: auto;
+    margin-left: 50px;
+}
+
+
+
+footer{
+    object-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--color_footer);
+}
+.cont-nav-2{
+
+    width: 80%;
+}
+
+.navegador-2, .navegador-2 a {
+    font-size: large;
+    text-decoration: none;
+    color: var(--blanco);
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.navegador-2 a{
+    width: 12%;
+}
+
+/*@media (min-width: 900px){
+
+}
+*/
+ 
+
+
+
+/* .navegador{
+    background-color: aqua;
+} */
+
+
+/*seccion pagina 1*/
+.seccion-pagina-1{
+    box-sizing: border-box;
+    margin: var(--margin_cero);
+    margin-top: 0%;
+    height: 600px;
+    background-image: url(../imagenes_integrador_front/hawaii.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedorcovertor{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+ background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.cajadetexto{
+    padding: 70px;
+    height:  300px;
+    width: 600px;
+    font-size: larger;
+    color: var(--blanco);
+    text-align:right ;
+}
+.cajadetexto h1{
+    text-align: end;
+}
+.cajadetexto-secbotones{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100px;
+}
+.cajadetexto-secbotones div{
+    margin: 20px;
+
+}
+.seccion-pagina-1-cajatexto-botones{
+
+    height: 40px;
+    width: 150px;
+    border-radius: 3px;
+    border-width: 1px;
+    color: var(--blanco);
+    font-size: var(--tamaño_fuente_botones);
+}
+.seccion-pagina-1-cajatexto-botones--comprar{
+    background-color: var(--color_boton_verde);
+}
+.seccion-pagina-1-cajatexto-botones--orador{
+
+    background-color: rgba(255, 255, 255, 0);
+    border-color: solid var(--blanco);
+
+}
+
+/* sección pagina 2 */
+
+.seccion-pagina-2-h2{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 0px;
+
+}
+.seccion-pagina-2-h2 span{
+    color: var(--color_fuente_grisclaro_header);
+    font-size: small;
+    display: block;
+
+}
+
+.seccion-pagina-2{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blanco);
+    height: 600px;
+    width: 100%;
+
+}
+.seccion-pagina-2-tarjetas{
+
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.seccion-pagina-2-tarjetas-elemento img{
+    width: 100%;
+    max-height: 300px;
+}
+
+.seccion-pagina-2-tarjetas-sub{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+.seccion-pagina-2-tarjetas-elemento{
+
+    width: 30%;
+    margin: 20px;
+}
+
+.etiqueta-javas{
+    background-color: var(--color_boton_js);
+    color: var(--negro);
+
+}
+.etiqueta-react{
+    background-color: var(--color_boton_react);
+    color: var(--blanco);
+
+}
+
+.etiqueta-ada1{
+    background-color: var(--color_boton_ada1);
+    color: var(--blanco);
+
+}
+.etiqueta-ada2{
+    color: var(--blanco);
+    background-color: var(--color_boton_ada2);
+
+}
+.etiqueta-orador-gral{
+    padding-right: 4px;
+    padding-left:4px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 3px;
+    height:16px;
+    margin: 2px;
+    font-size: var(--tamaño_fuentes_etiquetas_oradores);
+}
+
+.etiquetasdecoloresdiv{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.size_sec_2y3{
+    width: 100%;
+    height: 400px;
+
+}
+
+.seccion-pagina-3{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color_header);
+
+}
+
+.seccion-pagina-3-caja{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+}
+.seccion-pagina-3-elemento-1 {
+    background-image: url(../imagenes_integrador_front/honolulu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+#botonMenu:hover, #botonMenu svg:hover{
+    cursor: pointer;
+}
+.seccion-pagina-3-elemento-2{
+    color: var(--blanco);
+    padding: 20px;
+}
+.seccion-pagina-3-elemento-1-buttom{
+    background-color: #ffffff00;
+    border-radius:3px ;
+    border-width: 1px;
+    border-color: var(--blanco);
+    color: var(--blanco);
+    padding: 7px;
+
+}
+.seccion-pagina-4 h2{
+    text-align: center;
+}
+.seccion-pagina-4-cajaformulario{
+    color:var(--color_fuente_form) ;
+
+    text-align: center;
+    width: 70%;
+
+
+}
+.seccion-pagina-4-cajaformulario input{
+    border-color: var(--color_fuente_grisclaro_header);
+    border-style: solid;
+
+}
+
+.seccion-pagina-4-cajaformulario-span-1{
+    color: var(--color_fuente_grisclaro_header);
+    font-size:medium;
+    display: block;
+}
+.seccion-pagina-4-cajaformulario-span-2{
+    border-bottom:dotted 2px;
+
+}
+.seccion-pagina-4-cajaformulario h2{
+    border-width: 1px;
+
+    font-size: 40px;
+}
+
+.seccion-pagina-4-cajaformulario-form {
+
+    flex-direction: row ;
+
+
+}
+
+.seccion-pagina-4-cajaformulario-form-input input{
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: solid gray;
+    padding: 3px;
+
+    width: 700px;
+    margin: 15px;
+    height: 25px;
+
+
+
+}
+.newinputsCorreoytitulo{
+    width: 98%;
+    margin: 10px auto;
+    border-radius: 6px;
+    height: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color_fuente_grisclaro_header);
+}
+.seccion-pagina-4-cajaformulario-submit {
+    width: 100%;
+    background-color: var(--color_boton_enviarform_verde);
+    border-radius: 5px;
+    border-width: 0px;
+    padding: auto auto;
+    height: 40px;
+    color: var(--blanco);
+    font-size: 23px;
+}
+.seccion-pagina-4-cajaformulario textarea {
+    border:var(--color_fuente_grisclaro_header) solid 1px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+    max-width: 100%;
+    max-height: 100px;
+    min-width: 100%;
+    min-height: 100px;
+}
+
+.seccion-pagina-4{
+    height: 550px;
+}
+.secciónpagcomprartickets{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+#p{
+    color: var(--color_fuente_grisclaro_header);
+    margin-left: 10px;
+    text-align: left;
+}
+footer{
+    object-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--color_footer);
+}
+.cont-nav-2{
+
+    width: 80%;
+}
+
+.navegador-2, .navegador-2 a {
+    font-size: large;
+    text-decoration: none;
+    color: var(--blanco);
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.navegador-2 a{
+    width: 12%;
+}
+
+@media (max-width: 900px){
+    .admin1{
+        display: none;
+    }
+    .admin2{
+        display: block;
+    }
+    .header{
+
+        box-sizing: border-box;
+        padding: 3px;
+
+        flex-direction: column;
+
+    }
+    .header_element--1{
+
+        width: 100%;
+        margin: 0px;
+        /* background-color: aqua; */
+    }
+    .header_element--2{
+        box-sizing: border-box;
+        padding: 10px;
+
+
+        width: 100%;
+        /* background-color: aquamarine; */
+    }
+
+    footer{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        box-sizing: border-box;
+        margin-top: 80px;
+
+        height: 120px;
+        overflow: hidden;
+
+
+    }
+    .cont-nav-2{
+        margin-left: auto;
+        margin-right: auto;
+        /* background-color: aqua; */
+
+
+        box-sizing: border-box;
+
+    }
+
+
+
+    #botonMenu{
+
+        position: absolute;
+        top: 15px;
+        right: 0;
+        display: block;
+        /* background-color: rgb(255, 0, 0); */
+
+
+
+    }
+    #contenidoMenu{
+        /* box-sizing: border-box; */
+
+        margin: 0 0 30px 0;
+
+        width: 100%;
+        height: 90px;
+
+        display: none;
+
+
+    }
+  
+
+
+
+}
+@media (max-width:856px ){
+    .cont-nav-2{
+        width: 100%;
+    }
+    .navegador-2{
+        width: 100%;
+
+    }
+
+}
+
+@media (max-width:724px ){
+    footer, .cont-nav-2, .navegador-2{
+        min-height:330px;
+        padding: 10px;
+
+    }
+    .cont-nav-2{
+        padding-top: 10px;
+
+
+
+    }
+    .navegador-2{
+        display: flex;
+        flex-direction:column ;
+    }
+    .navegador-2 a {
+        padding-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 50%;
+        /* background-color: green; */
+
+    }
+
+}
+
+@media (max-width: 547px){
+    .navegador div {
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+    }
+}
+@media (max-width: 465px){
+    .header{
+        height: 70px;
+
+    }
+    #botonMenu{
+        display: block;
+        /* background-color: rgb(255, 0, 0); */
+        position:absolute ;
+        right: 0;
+
+    }
+    #contenidoMenu{
+        display: none;
+    }
+}
+@media (max-width:415px ){
+    .seccion-pagina-4{
+        min-height: 700px;
+    }
+}
+
+@media (max-width: 357px){
+    .header{
+        display: flex;
+        align-items: first baseline;
+        height: 120px;
+    }
+    .header_element--1{
+        padding-top: 10px;
+        width: 50%;
+        text-align: center;
+        display: block;
+    }
+    .header_element--1 img, .header_element--1 h2{
+        margin-bottom: 0%;
+        margin-top: 0px;
+        box-sizing: border-box;
+
+    }
+    .header_element--1 img{
+        margin-left: 0%;
+    }
+    .contenidoMenu, .navegador, .navegador div{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 840px ){
+    .cont-nav-2{
+        width: 100%;
+    }
+    .navegador-2{
+        width: 100%;
+    }
+}
+
+@media (max-width:684px ){
+
+    .seccion-pagina-3{
+        height: 550px;
+    }
+    .seccion-pagina-2{
+        height: 700px;
+    }
+    .seccion-pagina-2-tarjetas-sub{
+
+        width: 95%;
+    }
+
+}
+@media (max-width: 547px){
+    .navegador div {
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+
+    }
+
+}
+@media (max-width: 465px){
+    .seccion-pagina-4-cajaformulario-form-input input{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .admin2{
+        width: 100%;
+    }
+    #ingresoAdmin2{
+        width: 100%;
+    }
+    .header{
+        height: 70px;
+
+    }
+    #botonMenu{
+        display: block;
+        /* background-color: rgb(255, 0, 0); */
+        position:absolute ;
+        right: 0;
+
+    }
+    #contenidoMenu{
+        display: none;
+
+
+    }
+    .seccion-pagina-1{
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .cajadetexto{
+        /* background-color: violet; */
+        box-sizing: border-box;
+        /* background-color: aqua; */
+        padding: 30px;
+        height: 400px;
+        width: 100%;
+        font-size: medium;
+
+    }
+    .cajadetexto-secbotones{
+        /* background-color: red; */
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+    .cajadetexto-secbotones div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion-pagina-2{
+        margin-top: 0px;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        overflow: hidden;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        /* background-color: blue; */
+        padding-top: 30px;
+    }
+    .seccion-pagina-2-tarjetas{
+
+        width: 100%;
+        /* background-color: red; */
+        margin-bottom: 30px;
+
+    }
+    .cajadetexto-secbotones div{
+        width: 100%;
+        /* background-color: aqua; */
+        margin: 5px;
+        /* background-color: aqua; */
+    }
+    .seccion-pagina-2-tarjetas-sub{
+        /* background-color: green; */
+        flex-direction: column;
+
+    }
+
+    .seccion-pagina-2-tarjetas-elemento{
+        margin-top: 5px;
+        margin-left:auto ;
+        margin-right:auto ;
+        width: 100%;
+        /* background-color: yellow;
+        background-color: aqua; */
+        display: flex;
+        flex-direction: row;
+
+    }
+    .parte-tarjeta{
+        /* background-color: violet; */
+        width: 50%;
+    }
+    .seccion-pagina-2-tarjetas-elemento .imgcaja{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        margin-right: 10px;
+
+    }
+    /* .seccion-pagina-2-tarjetas-elemento img{
+        height: auto;
+    } */
+
+    .seccion-pagina-3{
+        height: 550px;
+    }
+
+    .seccion-pagina-4{
+        padding-top: 10px;
+        height: 650px;
+
+    }
+    .seccion-pagina-4-cajaformulario-form-input{
+        flex-direction: column;
+
+    }
+    .seccion-pagina-4-cajaformulario-form-input input{
+        width: 90%;
+    }
+    .seccion-pagina-4-cajaformulario-form{
+        text-align: center;
+    }
+    #p{
+        text-align: center;
+    }
+
+}
+@media (max-width: 450px){
+    .seccion-pagina-3{
+        height: 600px;
+    }
+    footer{
+        height: 250px;
+    }
+
+}
+
+@media (max-width: 410px){
+    .seccion-pagina-2{
+        height: 1100px;
+    }
+    .seccion-pagina-3{
+
+        flex-direction: column;
+        height: 650px;
+    }
+    .seccion-pagina-3-caja{
+        display: block;
+
+        width: 100%;
+    }
+    .seccion-pagina-3-elemento-1-buttom{
+        object-position: center;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .seccion-pagina-4{
+        height: 550px;
+    }
+    footer{
+        height: 250px;
+    }
+
+
+}
+
+@media (max-width: 357px){
+    .seccion-pagina-1{
+        height: 550px;
+
+    }
+    .contenedorcovertor{
+
+        padding: 0%;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .cajadetexto{
+        margin-top: 0px;
+    }
+    .header{
+        display: flex;
+        align-items: first baseline;
+
+        height: 120px;
+
+    }
+
+
+    .header_element--1{
+
+        padding-top: 10px;
+        width: 50%;
+
+        text-align: center;
+        display: block;
+    }
+    .header_element--1 img, .header_element--1 h2{
+        margin-bottom: 0%;
+        margin-top: 0px;
+        box-sizing: border-box;
+
+    }
+    .header_element--1 img{
+        margin-left: 0%;
+    }
+
+    .seccion-pagina-2{
+        height: 1600px;
+
+    }
+
+    .seccion-pagina-2-tarjetas-elemento {
+        text-align: center;
+        display: block;
+        padding: auto;
+    }
+    .parte-tarjeta{
+        margin-right: auto;
+        margin-left: auto;
+        width: 98%;
+    }
+    .imgcaja {
+        padding-right: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+    }
+    .etiquetasdecoloresdiv{
+        display: flex;
+        justify-content: center;
+    }
+    .contenidoMenu, .navegador, .navegador div{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:288px){
+    h2{
+        font-size: large;
+    }
+    .seccion-pagina-1{
+        min-height:650px;
+        max-height: auto;
+    }
+    .seccion-pagina-1{
+        min-height:750px;
+        max-height: auto;
+    }
+
+}
+
+@media (max-width:288px){
+    .seccion-pagina-4-cajaformulario-form{
+        padding: 0px;
+    }
+    
+    .seccion-pagina-4-cajaformulario-form-input{
+        padding: 0%;
+        margin: 10px 0px 0px;
+        width: 100%;
+
+    }
+    #section3{
+        min-height: 750px;
+        
+    }
+    
+}
+@media (max-width:270px){
+    .seccion-pagina-4 h2{
+        font-size: 30px;
+    }
+    .seccion-pagina-4 h2 span{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,47 @@
+html, body{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagenes_integrador_front/imagenfondoblancoformasestilotecnologico.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table{
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    width: 99.9%;
+    height: auto;
+}
+table tr td, table tr{
+    padding: 10px;
+}
+table tr{
+    background-color: rgba(21, 45, 51, 0.637);
+}
+.tabledatos{
+    box-sizing: border-box;
+    font-size: larger;
+    font-weight: 800;
+    font-style: italic;
+    margin: 50px auto;
+    width: 100%;
+    height: auto;
+}
+.cover{
+    box-sizing: border-box;
+    margin: 0%;
+    width: 100%;
+    min-height:100%;
+    height: auto;
+    overflow: hidden;
+    background-color: rgba(250, 250, 250, 0.877);
+    z-index: -1;
+}
+h1{
+    text-align: center;
+}

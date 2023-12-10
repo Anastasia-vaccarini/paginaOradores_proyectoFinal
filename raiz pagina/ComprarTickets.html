@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="css/comprarticketstyle.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Tickets</title>
+</head>
+<body>
+    
+    <header class="header alineador_vertical">
+
+
+        <div class="header_element--1 alineador_vertical">
+            <a href="index.html">
+                <img class="header_element--1--img"  src="imagenes_integrador_front/codoacodo.png" alt="logo codo a codo">
+            </a>
+            
+            <h2>Conf Wx As</h2>
+        </div>
+        <!--comienza el boton menu-->
+        <div id="botonMenu" class="alineador_vertical">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-category" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 4h6v6h-6z" />
+                <path d="M14 4h6v6h-6z" />
+                <path d="M4 14h6v6h-6z" />
+                <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+            </svg>
+        </div>
+
+        <!--termina el boton menu-->
+        <div id="contenidoMenu" class="header_element--2 alineador_vertical" >
+            
+            <nav class="navegador">
+                <div >
+                    <div><a class="header_element--2--opcion  header_element--2--opcion-1" href="index.html">La conferencia</a></div>
+                    <div><a class="header_element--2--opcion  header_element--2--opcion-3" href="index.html#losoradores">Los oradores</a></div>
+                    <div><a class="header_element--2--opcion  header_element--2--opcion-3" href="lugaryfecha.html">El lugar y la fecha</a></div>
+                    <div><a class="header_element--2--opcion  header_element--2--opcion-3" href="index.html#registrarorador">Conviértete en orador</a></div>
+                    <div>
+                        <a class="header_element--2--opcion  header_element--2--opcion-2" href="ComprarTickets.html">Comprar tickets</a></div>
+
+                    
+                
+                
+                
+                </div>
+                
+    
+            </nav>
+        </div>
+        
+    </header>
+
+
+
+    <div class="secyionCompraTicket">
+        <div class="contenedorCompraTickets">
+            <div class="CompraTickets-sec1-ofertas">
+    
+                <div class="ofertas ofertas-1 ">
+                    <div class="divParteTarjOFERT titletarje"><p>Estudiante</p></div>
+                    <div class="divParteTarjOFERT tiendescuent"    ><p>Tienen un descuento</p></div>
+                    <div class="divParteTarjOFERT"><p class="porcdescuento">80%</p></div>
+                    <div class="divParteTarjOFERT div-presentardocu-ofert"><p>*presentar documentación</p></div>
+                    
+                </div>
+
+                <div class="ofertas ofertas-2">
+                    <div class="divParteTarjOFERT titletarje"><p>Trainee</p></div>
+                    <div class="divParteTarjOFERT tiendescuent  " ><p>Tienen un descuento</p></div>
+                    <div class="divParteTarjOFERT"><p class="porcdescuento">50%</p></div>
+                    <div class="divParteTarjOFERT div-presentardocu-ofert"><p>*presentar documentación</p></div>
+                    
+    
+                </div>
+
+                <div class="ofertas ofertas-3">
+                    
+                    <div class="divParteTarjOFERT titletarje"><p>Junior</p></div>
+                    <div class="divParteTarjOFERT tiendescuent  " ><p>Tienen un descuento</p></div>
+                    <div class="divParteTarjOFERT"><p class="porcdescuento">15%</p></div>
+                    <div class="divParteTarjOFERT div-presentardocu-ofert"><p>*presentar documentación</p></div>
+                    
+                </div>
+    
+            </div>
+
+            <div class="tickets">
+
+                <div class="venta-tituloform">
+    
+                    <h2>VENTA</h2>
+                    <h1>VALOR DE TICKET $200</h1>
+                </div>
+                <div class="div-form">
+                    <form action="comprarticket.php" method="POST">
+                        <div class=" dis-todosForm div-inputs-NameApellido">
+    
+                            <input class="doblesinputsdivisions inputscargardatostodosigual generalinputsforms input-nameApellido resets" 
+                            name="Nombre" type="text" placeholder="Nombre" required>
+    
+                            <input class="resets  doblesinputsdivisions inputscargardatostodosigual generalinputsforms input-nameApellido " name="Apellido" type="text" placeholder="Apellido" required>
+    
+                        </div>
+                        <div class="dis-todosForm div-input-correo">
+                            <input class="inputcorreo inputscargardatostodosigual generalinputsforms resets" name="Correo" type="email" placeholder="Correo" required>
+                        </div>
+                        <div class="dis-todosForm div-input-cantidadselectcategory">
+    
+                            <div class="label-categoriaycantidad ">
+                                <div class="label doblesinputsdivisions">
+                                    <label for="cantidad">
+                                        Cantidad
+                                    </label>
+                                </div>
+                                <div class="labelCategoria label doblesinputsdivisions">
+                                    <label  for="Categoria">
+                                        Categoria
+    
+                                    </label>
+                                </div>
+                                
+                            </div>
+                            <div class="div-selectCantidad">
+                                
+                                
+                                <div class=" selectorycantidad ">
+
+                                    <input id="cantidadBoletos" class="cantselection doblesinputsdivisions inputscargardatostodosigual  generalinputsforms " name="cantidad" type="number" placeholder="Cantidad" value="1" min="1">
+
+                                    <div class="labelCategoria2">
+                                        <label for="Categoria">
+                                            Categoria
+        
+                                        </label>
+                                    </div>
+                                    <select class="cantselection  doblesinputsdivisions inputscargardatostodosigual  generalinputsforms selectcom ajusteSelector" name="Categoria">
+                                        <option value="Estudiante">Estudiante</option>
+                                        <option value="Trainee">Trainee</option>
+                                        <option value="Junior">Junior</option>
+                    
+                                    </select>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="cont">
+                            <div class="generalinputsforms  TotalAPagar">
+                            
+                                <div class="textTotalApagar">
+                                    <p>Total a Pagar: $</p>
+                                </div>
+                                <div  class="inputTotalApagar">
+                                    <input name="total" id="BedesPagar" class="total " type="number" value="200" readonly>
+                                </div>
+                                
+            
+                            </div>
+                        </div>
+                        
+                        <div id="resumeHere">
+    
+                        </div>
+                        <div class="dis-todosForm div-botonesfinalform">
+                            <button id="Borrar" class="doblesinputsdivisions generalinputsforms botonesfinalformulario">Borrar</button>
+                            <button id="RESUME" class="doblesinputsdivisions generalinputsforms botonesfinalformulario">Resumen</button>
+                        </div>
+        
+        
+
+        
+                    </form>
+    
+    
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            
+        </div>
+        
+    </div>
+
+
+
+
+
+
+    <footer >
+
+        <div class="cont-nav-2">
+            <nav class="navegador-2">
+                
+                    
+                        <a class="navegador-2-footer" href="">Preguntas frecuentes</a>
+                
+                <a class="navegador-2-footer" href="">Contáctenos</a>
+                
+                        <a class="navegador-2-footer" href="">Prensa</a>
+                    
+                
+                        <a class="navegador-2-footer" href="">Conferencias</a>
+                    
+                
+                        <a class="navegador-2-footer" href="">Términos y condiciones</a>
+                    
+                    
+                    <a class="navegador-2-footer" href="">Privacidad</a>
+                    <a class="navegador-2-footer" href="">Estudiantes</a>
+                    
+                    
+                    
+                
+                
+                
+            </nav>
+        </div>
+        
+
+
+    </footer>
+    <script src="JScopia/script.js"></script>
+</body>
+</html>
